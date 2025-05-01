@@ -1,5 +1,7 @@
 # Day 1
-# Print all environment variables.
+# Challenge: Print all environment variables.
+# Focus: os.environ, basics
+# Example Hint: Use os.environ.items()
 
 import os
 
