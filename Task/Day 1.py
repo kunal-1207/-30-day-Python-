@@ -1,4 +1,5 @@
 # Day 1
+# Print all environment variables.
 
 import os
 
