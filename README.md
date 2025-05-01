@@ -1,4 +1,4 @@
-# -30-day-Python-
+# 30-day-Python
 This is a 30 day python challenge
 
 ### Week 1–2: Python Fundamentals (Days 1–10)
