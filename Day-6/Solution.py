@@ -1,3 +1,7 @@
+# Day 6
+# Challenge: Create a function that compresses old logs (7+ days).
+# Focus: shutil, datetime
+# Example Hint: Use shutil.make_archive
 
 import os
 import shutil
