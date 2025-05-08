@@ -103,4 +103,8 @@ calculator()
 
 * Calls the `calculator()` function to execute the program.
 
+## Future Enhancements
 
+* Add support for additional arithmetic operations (multiplication, division).
+* Implement input validation for operators.
+* Include a loop to allow multiple calculations without restarting the program.
