@@ -1,4 +1,4 @@
-## Script to Create and Destroy Docker Containers
+# Script to Create and Destroy Docker Containers
 
 This Python script is designed to demonstrate the management of Docker containers using the `docker-py` SDK. It connects to the local Docker daemon, pulls a lightweight Docker image (`alpine:latest`), creates a container with resource limits, executes a simple command, streams the container logs in real-time, and then removes the container upon completion.
 
