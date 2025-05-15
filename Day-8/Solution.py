@@ -1,7 +1,7 @@
 # Day 8
 # Challenge: Write a CLI tool to tail a log file in real-time.
 # Focus: file I/O, loops
-# Hint: Use seek() and readlines()
+# Example Hint: Use seek() and readlines()
 
 
 import os
