@@ -1,7 +1,7 @@
 # Day 11
 # Challenge: Write a backup script for /var/log/ rotated daily.
 # Focus: file automation
-# Hint: Combine shutil + datetime
+# Example Hint: Combine shutil + datetime
 
 #!/usr/bin/env python3
 import shutil
