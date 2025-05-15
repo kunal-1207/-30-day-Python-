@@ -1,7 +1,7 @@
 # Day 9
 # Challenge: Read a JSON config file and print formatted output.
 # Focus: json, dictionaries
-# Hint: json.load()
+# Example Hint: json.load()
 
 import json
 def mask_sensitive(d, keys_to_mask=None):
