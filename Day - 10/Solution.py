@@ -1,7 +1,7 @@
 #  Day 10
 # Challenge: Retry Decorator
 # Focus: decorators, error handling
-# Hnt: try/except, time.sleep()
+# Example Hint: try/except, time.sleep()
 
 import time
 import random
