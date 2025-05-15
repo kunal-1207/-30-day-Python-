@@ -1,7 +1,7 @@
 # Day 12
 # Challenge: Fetch EC2 instance statuses using Boto3.
 # Focus: AWS SDK (boto3), API interaction
-# Hint: Install boto3 using pip
+# Example Hint: Install boto3 using pip
 
 import logging
 import boto3
