@@ -1,7 +1,7 @@
 # Day 7
 # Challenge: Build a script that watches CPU usage and alerts if >80%.
 # Focus: psutil
-# Install with pip
+# Example Hint: Install with pip
 
 import psutil
 
