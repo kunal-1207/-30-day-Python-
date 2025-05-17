@@ -17,7 +17,7 @@ A Python script to fetch and display top active alerts from a Prometheus server 
 
 ## 🛠️ Dependencies
 
-* requests
+* `requests` library
 
 Install dependencies:
 
@@ -27,20 +27,20 @@ pip install requests
 
 ## 🚀 How to Run
 
-1. Clone this repository:
+### 1. Clone this repository:
 
 ```bash
 git clone <repository-url>
 cd <repository-directory>
 ```
 
-2. Update the configuration values in the script:
+### 2. Update the configuration values in the script:
 
 * `PROMETHEUS_URL`: URL of the Prometheus server (e.g., `http://localhost:9090`).
 * `TIMEOUT`: Connection timeout in seconds.
 * `USERNAME` and `PASSWORD`: Uncomment and update if authentication is required.
 
-3. Run the script:
+### 3. Run the script:
 
 ```bash
 python alert_fetcher.py
@@ -48,7 +48,7 @@ python alert_fetcher.py
 
 ## 🐳 Running Prometheus in Docker
 
-You can run Prometheus locally using Docker with the following command:
+Run Prometheus locally using Docker:
 
 ```bash
 docker run -p 9090:9090 prom/prometheus
@@ -77,7 +77,7 @@ TIMEOUT = 5  # seconds
 # PASSWORD = "your_password"
 ```
 
-* Uncomment and set these values if your Prometheus instance requires authentication.
+* Uncomment and set these values if authentication is required.
 
 ### Testing the Connection
 
@@ -86,7 +86,7 @@ def test_prometheus_connection():
     health_url = f"{PROMETHEUS_URL}/-/healthy"
 ```
 
-* Checks the health status of the Prometheus server using the `/-/healthy` endpoint.
+* Verifies the health status of the Prometheus server using the `/-/healthy` endpoint.
 
 ### Fetching Active Alerts
 
@@ -96,7 +96,7 @@ def get_active_alerts():
 ```
 
 * Connects to the `/api/v1/alerts` endpoint to fetch active alerts.
-* Filters alerts that are in the `firing` state.
+* Filters alerts in the `firing` state.
 
 ### Displaying Alerts
 
@@ -104,7 +104,7 @@ def get_active_alerts():
 def display_alerts(alerts):
 ```
 
-* Formats and prints alert details including name, severity, state, and active duration.
+* Formats and prints alert details, including name, severity, state, and active duration.
 
 ### Main Function
 
@@ -121,6 +121,37 @@ if __name__ == "__main__":
 * Check network/firewall settings.
 * Update authentication credentials if required.
 * Increase the timeout value if necessary.
+
+## 🛠️ Pros and Cons of Running in WSL vs. Windows
+
+### ✅ Pros of WSL:
+
+* Unix-like environment, making it easier to manage dependencies.
+* Easier to run Docker containers.
+* Native Bash scripting support.
+
+### ❌ Cons of WSL:
+
+* Potential network configuration issues.
+* File path differences may cause errors.
+* Requires enabling WSL and Docker Desktop.
+
+### ✅ Pros of Windows:
+
+* Easier setup for Python without WSL configuration.
+* Direct access to Windows filesystem.
+
+### ❌ Cons of Windows:
+
+* Dependency management can be more complex.
+* Docker may require additional configuration.
+* Some Unix-based commands may not work as expected.
+
+## 🚧 Problems Encountered
+
+* Network connection errors due to incorrect Prometheus URL.
+* Authentication failures when the server required credentials.
+* Docker not starting properly in WSL due to incorrect permissions.
 
 ## 📜 License
 
