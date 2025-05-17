@@ -1,0 +1,32 @@
+---
+- name: Deploy Python Application
+  hosts: localhost
+  connection: local
+  vars:
+    dest_path: "~/hello.py"  # Using ~ for home directory
+
+  tasks:
+    - name: Ensure Python is installed
+      apt:
+        name: python3
+        state: present
+      become: yes
+
+    - name: Copy Python script to destination
+      copy:
+        src: Day_17.py
+        dest: "{{ dest_path | expanduser }}"
+        mode: '0755'
+
+    - name: Check script syntax
+      command: python3 -m py_compile "{{ dest_path | expanduser }}"
+      register: syntax_check
+      ignore_errors: yes
+
+    - name: Execute the Python script
+      command: python3 "{{ dest_path | expanduser }}"
+      register: script_output
+
+    - name: Display script output
+      debug:
+        var: script_output.stdout
