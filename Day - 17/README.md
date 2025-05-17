@@ -15,7 +15,7 @@ We will deploy a simple Python application using an Ansible playbook. The progra
 
 ---
 
-### Python Program (`Day_17.py`):
+### Python Program (`hello.py`):
 
 ```python
 #!/usr/bin/env python3
@@ -44,7 +44,7 @@ if __name__ == "__main__":
   hosts: localhost
   connection: local
   vars:
-    dest_path: "~/Day_17.py"
+    dest_path: "~/hello.py"
 
   tasks:
     - name: Ensure Python is installed
@@ -156,7 +156,7 @@ localhost                  : ok=6    changed=3    unreachable=0    failed=0    s
    * WSL: `sudo apt install python3 ansible`
    * Windows: Follow the official Ansible documentation for Windows installation.
 
-2. **Place the Python script (`Day_17.py`) and the playbook (`deploy.yml`) in the same directory.**
+2. **Place the Python script (`hello.py`) and the playbook (`deploy.yml`) in the same directory.**
 
 3. **Run the Playbook:**
 
