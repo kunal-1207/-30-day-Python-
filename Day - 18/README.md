@@ -1,7 +1,3 @@
-Sure! Here’s a detailed README.md draft for your project, explaining the setup, problems faced, solutions, and code sections clearly for a first-time reader — without exposing any sensitive info:
-
----
-
 # Jenkins Trigger API
 
 A simple Flask API to trigger Jenkins jobs remotely with basic authentication and parameter support.
