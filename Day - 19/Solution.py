@@ -1,3 +1,8 @@
+# Day 19
+# Challenge: Write a parser to convert Kubernetes YAML configs into JSON.
+# Focus: YAML parsing
+# Example Hint: Use pyyaml
+
 import yaml
 import json
 import sys
