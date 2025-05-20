@@ -1,3 +1,8 @@
+# Day 20
+# Challenge: Auto-tag untagged AWS EC2 instances with default tags.
+# Focus: boto3 advanced use
+# Example Hint: EC2 create_tags() method
+
 import boto3
 from botocore.exceptions import ClientError
 import argparse
