@@ -1,8 +1,3 @@
-Here's a professional `README.md` tailored to your Python script that auto-tags untagged AWS EC2 instances using `boto3`:
-
----
-
-````markdown
 # AWS EC2 Auto-Tagger
 
 **Identifies untagged or partially tagged EC2 instances and applies default tags (e.g., Environment, Owner) using boto3.**
