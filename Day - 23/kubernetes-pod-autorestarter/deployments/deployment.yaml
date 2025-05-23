@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pod-restarter
+  namespace: <your-namespace>
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: pod-restarter
+  template:
+    metadata:
+      labels:
+        app: pod-restarter
+    spec:
+      serviceAccountName: pod-restarter
+      containers:
+      - name: pod-restarter
+        image: python:3.9-slim
+        command: ["python", "pod_restarter.py", "--namespace", "<your-namespace>", "--interval", "60"]
+        volumeMounts:
+        - name: script-volume
+          mountPath: /app
+        workingDir: /app
+      volumes:
+      - name: script-volume
+        configMap:
+          name: pod-restarter-script
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: pod-restarter-script
+  namespace: <your-namespace>
+data:
+  pod_restarter.py: |
+    # Paste the entire script here
