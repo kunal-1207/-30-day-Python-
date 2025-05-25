@@ -1,3 +1,7 @@
+# Challenge: Auto-generate an Nginx config file from template variables.
+# Focus: string templating, Jinja2
+# Example Hints: Use jinja2
+
 from jinja2 import Environment, FileSystemLoader
 import os
 
