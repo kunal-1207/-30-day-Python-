@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg
+.python-version
+
+# Virtual Environment
+.venv/
+venv/
+env/
+
+# AWS
+.aws/
+*.pem
+
+# IDE
+.vscode/
+.idea/
+
+# Environment files
+.env
+*.secret
+
+# Local sync directory
+/s3_sync/
+
+# System
+.DS_Store
+Thumbs.db
