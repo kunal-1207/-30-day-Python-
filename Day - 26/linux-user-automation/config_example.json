@@ -1,0 +1,16 @@
+{
+  "users": [
+    {
+      "username": "dev1",
+      "password": "secure123",
+      "groups": ["developers"],
+      "shell": "/bin/bash"
+    },
+    {
+      "username": "sysadmin",
+      "password": "admin@123",
+      "groups": ["sudo", "admin"],
+      "comment": "System Admin"
+    }
+  ]
+}
