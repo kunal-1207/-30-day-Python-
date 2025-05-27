@@ -151,4 +151,4 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## 📬 Contact
 
-Project Link: [https://github.com/kunal-1207/service-monitoring-alerting-system](https://github.com/yourusername/service-monitoring-alerting-system)
+Project Link: [https://github.com/kunal-1207/service-monitoring-alerting-system](https://github.com/kunal-1207/30-day-Python-to-DevOps/tree/main/Day%20-%2027/service-monitoring-alerting-system)
