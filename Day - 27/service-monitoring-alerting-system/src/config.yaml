@@ -1,0 +1,16 @@
+service:
+  url: "https://example.com/health"
+  check_interval: 60
+  max_retries: 3
+  retry_delay: 5
+
+email:
+  recipients:
+    - "admin@example.com"
+  smtp:
+    host: "smtp.example.com"
+    port: 587
+    sender: "monitor@example.com"
+    username: "your_username"
+    password: "your_password"
+    tls: true
