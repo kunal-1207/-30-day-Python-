@@ -1,2 +1,2 @@
-Python 3.8+
-boto3
+boto3>=1.28.0
+PyYAML>=6.0  # Only if using config.yaml
