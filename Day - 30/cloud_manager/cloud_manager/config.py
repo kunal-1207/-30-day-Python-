@@ -9,7 +9,7 @@ from .utils.aws import AWSSessionManager
 logger = get_logger(__name__)
 
 class CloudManagerConfig:
-    def __init__(self, profile_name: str = 'default', region: str = 'ap-south-1', verbose: bool = False):
+    def __init__(self, profile_name: str = 'default', region: str = 'us-east-1', verbose: bool = False):
         self.profile_name = profile_name
         self.region = region
         self.verbose = verbose
